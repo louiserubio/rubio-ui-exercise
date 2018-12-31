@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- METADATA -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- STYLE -->
+	<style type="text/css">
+		body {
+			background: #f5e3f2;
+			font-size: 17px;
+			font-family: calibri, arial, sans-serif;
+			color: #c762ab;
+			margin: 0px;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		header {
+			height: 60px;
+    		border-bottom: 2px solid;
+		}
+
+		footer {
+			padding: 10px 30px;
+			background: #fff;
+		}
+
+		.logo_container {
+			background: url(../Exercise_1/images/logo.png) no-repeat;
+		    width: auto;
+		    background-size: 64px;
+		    height: 23px;
+		    padding: 18px 76px;
+		    color: #c762ab;
+    		font-weight: bold;
+    		cursor: pointer;
+		    float: left;
+		}
+
+		.menu_container {
+			float: right;
+		}
+
+		.menu {
+		    float: left;
+		    padding: 20px 0px;
+		}
+
+		a:-webkit-any-link {
+		   color: #c762ab;
+		   text-decoration: none !important;
+		   padding: 20px 35px;
+		   font-weight: bold;
+		   cursor: pointer;
+		}
+
+		a:-webkit-any-link:hover {
+		   color: #fff;
+		}
+
+
+		.menu:hover {
+		   background-color: #c762ab;
+		   color: #fff;
+		}
+
+		.buttons {
+			padding: 10px 20px;
+		    background: #c762ab;
+		    border: none;
+		    border-radius: 3px;
+		    color: #fff;
+		    border: 1px solid #fff;
+		    cursor: pointer;
+		}
+
+		.buttons:hover {
+			background: #fff;
+			color: #c762ab;
+			border: 1px solid #c762ab;
+		}
+
+		.text_input {
+			padding: 9px 15px;
+		    background: #fff;
+		    border: 1px solid;
+		    border-radius: 3px;
+		    color: #c762ab;
+		    width: 300px;
+		    margin-right: 10px;
+		}
+
+		.main_body_container a {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.main_body_container a:hover {
+			text-decoration: none;
+		}
+
+		.main_body_container hr {
+			color: #c762ab;
+		    border-top: 2px solid;
+		    margin: 0px;
+		}
+
+		.main_body_container .body_container_1 .sub_container {
+			width: 35%;
+			float: left;
+		}
+
+		.main_body_container .body_container_1 .sub_container .content p {
+		    width: 75%;
+		}
+
+		.main_body_container .body_container_1 .sub_container .content_header {
+			font-size: 40px;
+		}
+
+		.main_body_container .body_container_1 #container_1 {
+			padding: 100px;
+		}
+
+		.main_body_container .body_container_1 #container_2 {
+			padding: 63px 0px 0px 75px;
+			height: 427px;
+		}
+
+		.main_body_container .body_container_1 #container_2 .img {
+			width: 300px;
+			
+		}
+
+		.main_body_container .body_container_2 .sub_container {
+			width: 65%;
+			text-align: center;
+			margin: auto;
+		}
+
+		.main_body_container .content_header{
+			font-size: 30px;
+		}
+
+		.main_body_container .content p.sub {
+			font-style: normal;
+    		text-align: center;
+    		font-size: 13px;
+
+		}
+
+		.main_body_container .body_container_2 .content p {
+			font-style: italic;
+    		text-align: center;
+
+		}
+
+
+		.main_body_container .body_container_3 {
+			padding: 18px 40px;
+			border-bottom: 2px solid;
+		}
+
+		.main_body_container .body_container_3 .sub_container {
+			float: left;
+		}
+
+		.main_body_container .body_container_3 #container_1 {
+			width: 57%;
+		}
+
+		.main_body_container .body_container_3 #container_2 {
+			width: 25%;
+			padding: 0px 80px;
+		}
+
+		.main_body_container .body_container_3 .content p.sub {
+			font-style: normal;
+    		text-align: left;
+    		font-size: 13px;
+
+		}
+
+		.main_body_container .body_container_3 .container_block {
+			background: #fff;
+   			padding: 20px;
+		}
+
+		.footer_content1 {
+			float: right;
+   			padding: 12px 80px 0px 0px;
+		}
+
+		.footer_content2 p {
+			text-align: center;
+		}
+
+	</style>
+</head>
+<header>
+	<div class="header_container"> 
+		<div class="logo_container"> LOREM IPSUM </div>
+		<div class="menu_container"> 
+			<div class="menu"> <a href="../Exercise_1/exercise_1.html"> First </a> </div>
+			<div class="menu"> <a href="../Exercise_1/exercise_1.html"> Second </a> </div>
+			<div class="menu"> <a href="../Exercise_1/exercise_1.html"> Third </a> </div>
+			<div class="menu"> <a href="../Exercise_1/exercise_1.html"> Fourth </a> </div>
+		</div>
+	</div>
+	<div class="clear"> </div>
+</header>
+<div class="main_body_container">
+	<div class="body_container_1">
+		<div class="sub_container" id="container_1"> 
+			<div class="content_header"> Our Product </div>
+			<div class="content">
+				 <p class="main"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br /> </p>
+		    <input class='buttons' type='button' value ="Add to Cart" /> 
+			</div>
+		</div>
+		<div class="sub_container" id ="container_2"> 
+			<img class ='img' src="../Exercise_1/images/iphone_img_1.png">
+		</div>
+	</div>
+	<div class="clear"> </div>
+	<hr />
+	<div class="body_container_2">
+		<br /><br />
+		<div class="sub_container" id="container_1"> 
+			<div class="content_header"> Our Product - Testimonial </div>
+			<div class="content"> 
+				<p> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga." </p>
+				<p class="sub"> Steve, from Sweden </p>
+				<br />
+				<input class='buttons' type='button' value ="Read More" /> 
+			</div>
+		</div>
+	</div>
+	<br /><br />
+	<div class="clear"> </div>
+	<hr />
+	<div class="body_container_3">
+		<div class="sub_container" id="container_1">
+		<br />
+			<div class="content_header"> Our Product is best in category </div>
+			<div class="content"> 
+				<p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+				<br /><br />
+				 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+				<br /><br />
+				Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 	consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+				</p>
+				<p class="sub"> Published - 01.02.18 by <a>Anonymous</a><br /><br /></p>
+				
+			</div>
+		</div>
+		<div class="sub_container" id="container_2">
+			<br /><br />
+			<div class="container_block">
+				<div class="content_header"> More about Our Product </div>
+				<div class="content"> 
+				<p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+				<br /><br />
+				 Et harum quidem rerum facilis est et expedita distinctio. Nam libero temporemque nihil impedit quo.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="clear"> </div>
+</div>
+<footer>
+	<div class="logo_container"> LOREM IPSUM </div>
+	<div class="footer_content1"> <input class="text_input" type="text" placeholder="Your Email"> <input class='buttons' type='button' value ="Subscribe" /> </div>
+	<div class="clear"> </div>
+	<div class="footer_content2"> <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur </p> </div>
+</footer>
+</html>

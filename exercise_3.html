@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- SCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		function reverseString() {
+
+			// DECLARING 2 ARRAYS
+			var altArray = ["one", "three"];
+			var altArray1 = ["two", "four"]; // FOR REVERSE ARRAY
+
+			var b = altArray1.toString(); // CONVERT REVERSE ARRAY TO STRING TO REVERSE
+		    var splitString = b.split("");  // SPLIT STRINGS
+		    var reverseArray = splitString.reverse(); // APPLY REVERSING OF CODE
+		    var joinArray = reverseArray.join(""); // COMBINE THE REVERSED STRING
+		    var res = joinArray.split(","); // SPLIT THE STRING COMMA TO SEPARATE
+			res.reverse(); // REVERSE OF RESULT (INSTEAD OF ROUF, OWT RETURNS OWT, ROUF)
+
+		    var arrayCombined = $.map(altArray, function(v, i) { // JQUERY FUNCTION TO COMBINE ARRAYS ALTERNATIVELY
+			  return [v, res[i]];
+			});
+
+			console.log(arrayCombined);
+		    //alert(arrayCombined);
+		   
+		    	
+		    altArray.push(res); // JAVASCRIPT FUNCTION TO COMBINE ARRAYS
+		    console.log(altArray)
+		    //alert(altArray)
+
+
+		    var block_to_insert ;
+			var container_block ;
+			 
+			block_to_insert = document.createElement( 'div' );
+			// block_to_insert.innerHTML = '<br / > Result using JAVASCRIPT <b>' + altArray + '</b> <br / > Result using JQUERY <b>' + arrayCombined + '</b>';
+
+			block_to_insert.innerHTML = '<br / > Result: <b>' + arrayCombined + '</b>';
+			 
+			container_block = document.getElementById( 'container' );
+			container_block.appendChild( block_to_insert );
+
+
+
+	}
+ 	
+	</script>
+
+	<!-- STYLE -->
+	<style type="text/css">
+	body {
+		background: #fff;
+	    font-size: 17px;
+	    font-family: calibri, arial, sans-serif;
+	    color: #000;
+	    margin: auto;
+	    padding: 10px;
+	    width: 50%;
+	    text-align: center;
+		}
+	</style>
+</head>
+<body> <div class="main_container"> one, two, three, four <br /> To Reverse <u>two and four</u> <br /><br /> </div> <button onclick="reverseString()">Click Me</button> <div id="container"> </div> </body>
